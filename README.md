@@ -24,7 +24,8 @@ This module bridges the gap between Perfex CRM (Project Management/Sales) and WH
 ## Installation
 
 1.  Download the latest release.
-2.  Upload the `whmcs_bridge` folder to `modules/` directory in Perfex CRM.
+2.  **Important:** Rename the downloaded folder to `whmcs_bridge` (if it is named `perfex-whmcs-bridge-master` etc.).
+3.  Upload the `whmcs_bridge` folder to `modules/` directory in Perfex CRM.
 3.  Go to **Setup > Modules** and activate **WHMCS Bridge**.
     *   *Note:* If you see a database upgrade warning, simply run the upgrade. The module creates necessary tables (`tblwhmcs_client_map`, `tblwhmcs_invoice_map`) and custom fields upon activation/install.
 4.  Go to **Setup > Staff > Permissions** and grant view/edit permissions for the module to Administrator roles.
