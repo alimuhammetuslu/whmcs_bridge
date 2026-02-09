@@ -1,9 +1,15 @@
-# Perfex CRM to WHMCS Bridge
+# Perfex CRM to WHMCS Bridge (BETA)
 
-**Version:** 1.0.0
+**Version:** 1.0.0 (Beta)
 **Author:** Muhammet Ali USLU
 **License:** GPLv3
 **Website:** https://teknolojivepsikoloji.com
+
+> **⚠️ Beta Warning:** This module is currently in **BETA**. While it has been tested, please use it in a staging environment before deploying to production. Backup your database before installation.
+
+## Tested Environments
+- **Perfex CRM:** v3.4.0
+- **WHMCS:** v10.1.0 (Intermediate Release)
 
 ## Overview
 This module bridges the gap between Perfex CRM (Project Management/Sales) and WHMCS (Billing/Hosting Automation). It allows you to sell hosting services directly from Perfex CRM invoices and manage them within the client profile.
@@ -20,6 +26,7 @@ This module bridges the gap between Perfex CRM (Project Management/Sales) and WH
 1.  Download the latest release.
 2.  Upload the `whmcs_bridge` folder to `modules/` directory in Perfex CRM.
 3.  Go to **Setup > Modules** and activate **WHMCS Bridge**.
+    *   *Note:* If you see a database upgrade warning, simply run the upgrade. The module creates necessary tables (`tblwhmcs_client_map`, `tblwhmcs_invoice_map`) and custom fields upon activation/install.
 4.  Go to **Setup > Staff > Permissions** and grant view/edit permissions for the module to Administrator roles.
 
 ## Configuration
