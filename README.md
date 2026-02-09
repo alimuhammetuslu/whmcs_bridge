@@ -1,6 +1,6 @@
 # Perfex CRM to WHMCS Bridge (BETA)
 
-**Version:** 1.0.0 (Beta)
+**Version:** 1.1.0 (Beta)
 **Author:** Muhammet Ali USLU
 **License:** GPLv3
 **Website:** https://teknolojivepsikoloji.com
