@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 /*
 Module Name: WHMCS Bridge
 Description: Synchronize Clients, Invoices and Products between Perfex CRM and WHMCS.
-Version: 1.0.1
+Version: 1.1.1
 Requires at least: 3.0.*
 Author: Muhammet Ali Uslu
 Author URI: https://muhammetaliuslu.com
