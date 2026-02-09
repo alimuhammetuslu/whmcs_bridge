@@ -8,7 +8,7 @@ Description: Synchronize Clients, Invoices and Products between Perfex CRM and W
 Version: 1.0.0
 Requires at least: 3.0.*
 Author: Muhammet Ali Uslu
-Author URI: https://teknolojivepsikoloji.com
+Author URI: https://muhammetaliuslu.com
 License: GPLv3
 */
 
