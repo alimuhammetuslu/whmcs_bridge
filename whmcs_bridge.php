@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 /*
 Module Name: WHMCS Bridge
 Description: Synchronize Clients, Invoices and Products between Perfex CRM and WHMCS.
-Version: 1.0.0
+Version: 1.0.1
 Requires at least: 3.0.*
 Author: Muhammet Ali Uslu
 Author URI: https://muhammetaliuslu.com
@@ -17,7 +17,7 @@ License: GPLv3
  * @author    Muhammet Ali USLU <iletisim@muhammetaliuslu.com>
  * @copyright 2026 Muhammet Ali USLU
  * @license   https://opensource.org/licenses/GPL-3.0 GNU General Public License version 3 (GPLv3)
- * @link      https://github.com/alimuhammetuslu/perfex-whmcs-bridge
+ * @link      https://github.com/alimuhammetuslu/whmcs_bridge
  */
 
 define('WHMCS_BRIDGE_MODULE_NAME', 'whmcs_bridge');
@@ -56,18 +56,14 @@ register_language_files(WHMCS_BRIDGE_MODULE_NAME, [WHMCS_BRIDGE_MODULE_NAME]);
  */
 function whmcs_bridge_client_tab($tabs)
 {
-    // Debug: Log that hook is running
-    // log_activity("WHMCS Bridge: admin_client_tabs hook fired.");
-
-    // Check if user has permission to view this
-    // Temporarily removing permission check for debugging if needed, or ask user to check
     if (has_permission('whmcs_bridge', '', 'view')) {
         $tabs['whmcs_services'] = [
+            'slug'     => 'whmcs_services',
             'name'     => 'WHMCS Services',
             'icon'     => 'fa fa-server',
             'view'     => 'whmcs_bridge/client_tab',
-            'position' => 5, // Moved to top
-            'group'    => 'whmcs_services', // Required key in newer Perfex versions?
+            'position' => 50,
+            // Removing empty badge array to prevent PHP deprecation warnings in some Perfex versions
         ];
     }
     return $tabs;
